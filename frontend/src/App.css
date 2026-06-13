@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* Defining css colors as variables*/
+:root {
+    --noir: #1C1F1E;
+    --rouge: #EA4C36;
+    --lightGray: rgb(228, 225, 225); 
+    --font: 'Poppins', sans-serif;
+}
+/* pour utiliser une couleur dans un sélecteur: var(--noir)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--lightGray);
+    /*padding-bottom: 500px;*/
+    font-family: var(--font);
+}
+.App-header {
+    padding-top: 0px;
+    min-height: 88px;
+}
+nav {
+    background-color: var(--noir) !important;
+    min-height: 88px !important;
+    padding-bottom: 0 !important;
+    z-index: 5;
+}
+
+nav .navbar-toggler {
+    border: none !important;
+}
+
+nav span.navbar-toggler-icon {
+    background-image:none;
+    color: white;
+}
+/*************************************************************/
+nav ul li {
+    margin-right: 20px;
+    min-width: 112px;
+}
+
+/*******************************************************/
+nav ul.pushRight {
+    margin-right: 64px;
+}
+nav ul.pageLinks {
+    margin-left: 70px; /* 160px */
+}
+
+nav ul li.redBtn {
+    width: fit-content;
+}
+
+
+
+@media all and (max-width: 1199px) {
+    nav ul li{
+        text-align: center;
+    }
+    nav ul.pushRight {
+        margin-left: 62% ;
+        display: flex !important;
+        flex-direction: row;
+    }
+    nav ul li.pageLinks {
+        width: 80px !important;
+    }
+        
+    nav ul.dropdown-menu .dropdown-item {
+        width: 100%;
+    }
+    .App-header {
+        padding-bottom: 40px; /*20*/
+    }
+    nav ul li.redBtn {
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    
+}
+@media all and (max-width: 750px) {
+    nav ul.pushRight {
+        margin-left: 40% ;
+        display: flex !important;
+        flex-direction: row;
+    }
+}
+
+nav ul.dropdown-menu li a {
+    color: var(--noir) !important;
+}
+
+
+nav ul li a {
+    color: white !important;
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+    transition: .3s ease-in;
+}
+nav ul li a.active {
+    background-color: var(--rouge) ;
+    border-radius: 40px;
+}
+.dropdown-menu {
+    box-shadow: 0px 0px 8px white;
+    margin-left: 8px;
+}
+.dropdown-menu .dropdown-item {
+    transition-duration: .3s;
+    margin-left: 0px; 
+    text-align: left;
+    width: 110%; 
+}
+
+
+nav ul li.redBtn {
+    background-color: var(--rouge);
+    border-radius: 15px;
+    padding: 0px 8px;
+}
+
+.App-footer {
+    position: absolute;
+    bottom: 0px;
+    font-size: 18px;
+    width: 100%;
+    min-height: 260px;
+}
+.App-footer .footer-container {
+    background-color: var(--noir);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+.App-footer .footer-top {
+    display: flex;
+    align-items: center;
+}
+.App-footer .footer-top p {
+    color: var(--rouge);
+    width: 80px;
+}
+.App-footer a, .App-footer p {
+    text-decoration: none;
+    color: white;
+}
+.App-footer p a {
+    transition: .2s ease-in-out;
+    padding-bottom: 8px;
+}
+.App-footer p a:hover {
+    border-bottom: solid 2px var(--rouge);
+    color: rgb(192, 188, 188);
+}
+.App-footer .footer-content {
+    margin-left: 3%;
+}
+
+.App-footer .copyRight {
+    font-size: 15px;
+}
+
+.dropdown-menu {
+    display: block !important;
+  }
+
+
+ 

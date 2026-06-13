@@ -1,0 +1,119 @@
+.nav-link.dropdown-toggle::after {
+    content: '';
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    display: inline-block;
+  }
+ul.user-links {
+    display: none;
+}
+ul.user-dropdown {
+    margin-right: 120px;
+    display: block;
+}
+ul.user-dropdown img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+nav ul.pageLinksClient {
+    margin-left: 160px;
+}
+
+nav ul.pageLinks li a, nav ul.pageLinksClient li a {
+    transition: .2s ease-in-out !important;
+}
+nav ul.pageLinks li a:hover, nav ul.pageLinksClient li a:hover {
+    color: rgb(192, 188, 188) !important;
+}
+
+nav ul.user-links .logout {
+    background-color: var(--rouge);
+    border-radius: 15px;
+    padding: 8px 16px;
+    width: fit-content;
+    margin-top: 24px;
+}
+@media all and (max-width: 991px) {
+    ul.user-dropdown {
+        display: none;
+    }
+    ul.user-links {
+        display: block;
+        width: 80%;
+        margin-left: 19% ;
+    }
+}
+@media all and (max-width: 991px) {
+    nav ul.pageLinksClient {
+        margin-left: 0 !important;
+    }
+}
+@media all and (max-width: 800px) {
+    ul.user-links {
+        margin-left: 21%;
+    }
+ }
+ .dropdown-menu .dropdown-item {
+    transition: .5s ease-in-out;
+ }
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--rouge);
+    color: var(--noir) !important;
+}
+ /*****************************Dropdown *****************/
+.client-dropdown-menu .dropdown-item {
+    transition: .5s ease-in-out;
+}
+.client-dropdown-menu .dropdown-item:hover {
+    background-color: #ea4b36af;
+}
+nav ul.user-dropdown li .dropdown-menu {
+    margin-left: -25px;
+    width: fit-content;
+    height: 110px;
+    padding-left: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+}
+.client-dropdown-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.client-dropdown-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+nav ul.user-dropdown .dropdown-icons {
+    height: 100%;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px; 
+    background-color: var(--rouge);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: solid 1px  gray;
+}
+nav ul.user-dropdown  i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--noir);
+}
+
+
+
+/****************************************************/
